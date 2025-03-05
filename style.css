@@ -1,0 +1,231 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.navbar {
+  background-color: transparent;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #0041c4;
+}
+
+.btns-nav button {
+  background-color: rgba(230, 81, 0, 0.04);
+  color: aliceblue;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btns-nav button:hover {
+  background-color: #0041c4;
+}
+
+/* Main Content */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 10%;
+  background-image: url('nick-design-r56_QWu2slY-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.btn-get {
+  background-color: #0041c4;
+  color: aliceblue;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-get:hover {
+  background-color: #0033a0;
+}
+
+/* Scrollbar Section */
+.scroolbar {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  background-color: #33333304;
+  border-radius: 10px;
+  margin: 2%;
+  color: white;
+  font-size: 1.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #05060913 #414040;
+}
+
+.scroolbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroolbar::-webkit-scrollbar-track {
+  background: #33333300;
+}
+
+.scroolbar::-webkit-scrollbar-thumb {
+  background: #171a2000;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.scroolbar::-webkit-scrollbar-thumb:hover {
+  background: #00030705;
+}
+
+.scroolbar-thumb {
+  display: flex;
+  gap: 10px;
+}
+
+.card-1 {
+  display: inline-block;
+  background: #13131307;
+  padding: 17px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-image: url('cash-macanaya-X9Cemmq4YjM-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+  padding: 5rem 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.socials a {
+  color: aliceblue;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #1f00e6;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-bottom span {
+  color: #001fe6;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 5rem 5%;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .blog-feed {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scroolbar {
+    height: auto;
+    overflow-x: auto;
+  }
+}
